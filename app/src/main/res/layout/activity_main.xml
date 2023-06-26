@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/my_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/dot_insayder"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsSize="@dimen/_6sdp"
+      app:dotsSpacing="@dimen/_5sdp"
+        app:dotsStrokeWidth="@dimen/_5sdp"
+        app:dotsColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/my_view_pager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingClass" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="@string/o_tkazib_yuborish"
+        android:backgroundTint="#4A411F"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:cornerRadius="8dp"
+        android:layout_margin="20dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp"
+        android:layout_gravity="end"
+        android:textStyle="bold|italic"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
